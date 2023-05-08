@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImphYWtrb21hZSIsImlkIjoiNjQ1NjBjMmRjMTNkOGM1NDZhZGMwMGMxIiwiaWF0IjoxNjgzMzgxODIxfQ.H05PsDySy3VhhH4sL-WPq-DnyLB6SoK5j6grYytH0aE
+
+{
+  "title": "testi1",
+  "author": "jaakk",
+  "url": "https://blogspot.com",
+  "likes": "20"
+}
+
