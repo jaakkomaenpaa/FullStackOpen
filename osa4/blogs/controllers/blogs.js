@@ -53,6 +53,7 @@ blogsRouter.delete('/:id', async (request, response) => {
 
   const user = request.user
 
+
   if (!request.token) {
     response.status(401).json({ error: 'authorization token missing' })
   }
@@ -62,7 +63,7 @@ blogsRouter.delete('/:id', async (request, response) => {
   }
 
   const blogToDelete = await Blog.findById(request.params.id)
-  if (blogToDelete.user.toString() === user.toString()) {
+  if (blogToDelete.user.toString() === user.id.toString()) {
     await Blog.findByIdAndRemove(request.params.id)
   } else {
     response.status(401).json({ error: 'cannot delete blogs added by other users' })
