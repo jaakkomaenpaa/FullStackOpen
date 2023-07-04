@@ -1,0 +1,1 @@
+Edited (deleted) the commit history of this directory due to accidentally leaking a password, which is the reason why this commit is made after and not before submitting the completed exercises.
